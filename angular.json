@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "slack-clone"
+    }
+  },
+  "defaultProject": "slack-clone",
+  "cli": {
+    "analytics": "26d08b94-8bde-4c39-872f-4ca753c3ff6e"
+  }
 }
