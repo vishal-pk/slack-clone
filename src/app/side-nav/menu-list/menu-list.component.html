@@ -1,0 +1,22 @@
+
+    <!-- <a mat-list-item *ngFor="let channel of channels">
+      {{ channel.channelName}}
+    </a> -->
+<div  *ngIf="showChannelList" >
+<div class="channelContainer" *ngFor="let channel of channels">
+    <a  class="item" mat-list-item routerLink="/#" routerLinkActive="active">
+      <mat-icon  class="routeIcon"> {{channel.iconName}}</mat-icon>
+    <span class="channel-item-name">{{channel.channelName}}</span></a>
+</div>
+</div>
+<div *ngIf="showUserList" >
+<div  class="userContainer" *ngFor="let user of users; index as i">
+    <a  class="item" mat-list-item routerLink="/#" routerLinkActive="active">
+    <span class="userIconWrapper ">
+        <i [class]="user.color" class=" material-icons person-icon ">person</i>
+        <span class="onlinestatus"></span>
+    </span>
+    <span class="user-item-name">{{user.name}}</span>
+    </a>
+</div>
+</div>
