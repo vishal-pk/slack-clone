@@ -24,7 +24,7 @@ import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ChatHeaderComponent
+    ChatHeaderComponent,
     SideNavComponent,
     FirstListComponent,
     MenuListComponent,
