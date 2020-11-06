@@ -8,18 +8,39 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { ChatHeaderComponent } from './chat-header/chat-header.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { FirstListComponent } from './first-list/first-list.component';
+import { MatIconModule } from "@angular/material/icon";
+
+import { HttpClientModule } from '@angular/common/http';
+import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     ChatHeaderComponent
+    SideNavComponent,
+    FirstListComponent,
+    MenuListComponent,
+    NavbarComponent,
+    SideNavComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
