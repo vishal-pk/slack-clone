@@ -15,11 +15,18 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
+    SideNavComponent,
+    MessageBoxComponent,
+    MessageContainerComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScrollingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
