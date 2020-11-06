@@ -1,6 +1,6 @@
 <div>
-  <app-chat-header></app-chat-header>
-  <div class="ml">
+  <app-chat-header [receiver]="receiver"></app-chat-header>
+  <div class="pl">
     <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
           <div *cdkVirtualFor="let item of items" class="example-item">
             <app-message-box></app-message-box>

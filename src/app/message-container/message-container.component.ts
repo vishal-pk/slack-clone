@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageContainerComponent implements OnInit {
 items=['mani','sundar','rahuml','sundar'];
+receiver='Manoj';
   constructor() { }
 
   ngOnInit(): void {
