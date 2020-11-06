@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
@@ -20,7 +23,8 @@ import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
     SideNavComponent,
     FirstListComponent,
     MenuListComponent,
-
+    NavbarComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
