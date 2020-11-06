@@ -9,17 +9,23 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MessageBoxComponent } from './message-box/message-box.component';
+import { MessageContainerComponent } from './message-container/message-container.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SideNavComponent
+    SideNavComponent,
+    MessageBoxComponent,
+    MessageContainerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ScrollingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
