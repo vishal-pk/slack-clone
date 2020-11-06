@@ -19,24 +19,25 @@ import { MatIconModule } from "@angular/material/icon";
 
 import { HttpClientModule } from '@angular/common/http';
 import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
+import { MessageContainerComponent } from './message-container/message-container.component';
+import { MessageBoxComponent } from './message-box/message-box.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
     MessageComponent,
-
     NavbarComponent,
     ChatHeaderComponent,
     SideNavComponent,
     FirstListComponent,
     MenuListComponent,
     NavbarComponent,
-    SideNavComponent
-
-
+    SideNavComponent,
+    MessageContainerComponent,
+    MessageBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,8 @@ import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    ScrollingModule
 
   ],
   providers: [],
