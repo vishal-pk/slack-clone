@@ -18,4 +18,6 @@ faCoffee = faCoffee;
       this.messageArray.push(this.message);
       this.message="";
   }
-}
+ 
+  }
+
