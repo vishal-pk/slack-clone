@@ -1,0 +1,29 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav id="sidenav" mode="side" opened="true" style="width:20%;">
+    <div class="header">
+      <h3>Coda Academy Batch 2021 <span class="material-icons">
+        keyboard_arrow_down
+        </span></h3>
+    </div>
+    <mat-nav-list class=" list sidenav-firstlist">
+      <app-first-list ></app-first-list>
+    </mat-nav-list>
+    <mat-nav-list class=" list sidenav-channelList">
+      <a mat-list-item routerLink="/#" routerLinkActive="active">Channels</a>
+        <app-menu-list [showChannelList]=true></app-menu-list>
+     
+    </mat-nav-list>
+    <mat-nav-list class="list sidenav-DMList">
+      <a mat-list-item routerLink="/#" routerLinkActive="active">Direct messages</a>
+      <app-menu-list [showUserList]=true></app-menu-list>
+    </mat-nav-list>
+    <mat-nav-list >
+      <a mat-list-item routerLink="/#" routerLinkActive="active">Apps</a>
+    
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content id="main-content">
+    <!-- <router-outlet></router-outlet> -->
+    <p style="height:100vh">Main content </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
