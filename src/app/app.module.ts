@@ -5,6 +5,7 @@ import {FormsModule} from   '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MessageComponent } from './message/message.component';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MessageComponent } from './message/message.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    PickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
