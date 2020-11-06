@@ -28,11 +28,7 @@
               "src/assets"
             ],
             "styles": [
-
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-
               "src/styles.scss"
             ],
             "scripts": []
@@ -97,11 +93,7 @@
               "src/assets"
             ],
             "styles": [
-
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-
               "src/styles.scss"
             ],
             "scripts": []
@@ -135,11 +127,8 @@
       }
     }
   },
-
   "defaultProject": "slack-clone",
   "cli": {
-    "analytics": "26d08b94-8bde-4c39-872f-4ca753c3ff6e"
+    "analytics": "ce240b80-adbc-4e3f-bd32-23be08c1bb17"
   }
-
-
 }
