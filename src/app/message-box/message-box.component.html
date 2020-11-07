@@ -12,11 +12,9 @@
             <i class="fa fa-ellipsis-v fa-lg floating-icon tooltip" aria-hidden="true"></i>
 
         </div>
-        <span class="receiver">Receiver Name</span>  <span>15:20</span>
-        <p>Message content</p>
-        <p>Message content</p>
-        <p>Message content</p>
-        <p>Message content</p>
+        <span class="receiver">{{message.sender}}</span>  <span>15:20</span>
+        <p *ngFor='let msg of message.messages'>{{msg}}</p>
+      
     </div>
    
 </div>

@@ -20,7 +20,8 @@ import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
 import { MessageContainerComponent } from './message-container/message-container.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MessagePassingService } from './service/message-passing.service';
 
 
 @NgModule({
@@ -46,10 +47,13 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatListModule,
     MatIconModule,
     HttpClientModule,
-    ScrollingModule
+    ScrollingModule,
+    BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [
+    MessagePassingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
