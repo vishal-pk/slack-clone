@@ -10,43 +10,37 @@ import {MatListModule} from '@angular/material/list';
 import { FirstListComponent } from './first-list/first-list.component';
 import { MatIconModule } from "@angular/material/icon";
 
-import { MessageComponent } from './message/message.component';
 import { PickerModule } from '@ctrl/ngx-emoji-mart';
 
-import { NavbarComponent } from './navbar/navbar.component';
 
 import { ChatHeaderComponent } from './chat-header/chat-header.component';
-import { FirstListComponent } from './first-list/first-list.component';
-import { MatIconModule } from "@angular/material/icon";
 
 import { HttpClientModule } from '@angular/common/http';
 import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
-import { MessageContainerComponent } from './message-container/message-container.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MessagePassingService } from './service/message-passing.service';
 
 
 
 
-import { HttpClientModule } from '@angular/common/http';
-import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
 
 import "@angular/compiler"
+import { MessagePassingService } from './service/message-passing.service';
+import { MessageContainerComponent } from './message-container/message-container.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MessageComponent } from './message/message.component';
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
     FirstListComponent,
     MenuListComponent,
-
     MessageComponent,
     NavbarComponent,
     ChatHeaderComponent,
     FirstListComponent,
     MenuListComponent,
-    NavbarComponent,
     SideNavComponent,
     MessageContainerComponent,
     MessageBoxComponent
