@@ -10,7 +10,7 @@ export class MessageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-     message="";
+    message="";
     messageArray =[];
   textdisplay(){
       this.messageArray.push(this.message);

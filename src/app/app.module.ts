@@ -9,8 +9,6 @@ import { PickerModule } from '@ctrl/ngx-emoji-mart';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { ChatHeaderComponent } from './chat-header/chat-header.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
@@ -22,7 +20,8 @@ import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
 import { MessageContainerComponent } from './message-container/message-container.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MessagePassingService } from './service/message-passing.service';
 
 
 @NgModule({
@@ -44,15 +43,17 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     AppRoutingModule,
     FormsModule,
     PickerModule,
-    BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
     MatIconModule,
     HttpClientModule,
-    ScrollingModule
+    ScrollingModule,
+    BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [
+    MessagePassingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

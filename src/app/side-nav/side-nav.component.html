@@ -25,8 +25,11 @@
   </mat-sidenav>
   <mat-sidenav-content id="main-content" style="color: black; overflow: hidden;">
     <!-- <router-outlet></router-outlet> -->
-    <!-- <p style="height:100vh">Main content </p> -->
-    <app-message-container></app-message-container>
+    <div style="height:100vh">
+      <!-- <app-message-container></app-message-container> -->
+      <router-outlet></router-outlet>
+    </div>
+    
   </mat-sidenav-content>
 </mat-sidenav-container>
 

@@ -43,6 +43,7 @@
         margin-right: 10px;
         font-weight: bold;
         font-size: larger;
+        text-transform: capitalize;
         &:hover{
             text-decoration: underline;
         }
@@ -58,7 +59,7 @@
     }
     .float-menu{
         float: right;
-        margin-top: -1%;
+        margin-top: -25px;
         visibility: hidden;
         border :1px solid #999999;
         border-radius: 5px;

@@ -1,4 +1,6 @@
+
 import { Component, Input, OnInit } from '@angular/core';
+import { Message } from '../service/message-passing.service';
 
 @Component({
   selector: 'app-message-box',
@@ -7,10 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MessageBoxComponent implements OnInit {
 
-  @Input() message;
+  @Input() message : Message;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.message.messages);
   }
 
 }
