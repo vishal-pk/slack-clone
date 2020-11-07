@@ -1,4 +1,3 @@
-
 <mat-sidenav-container class="container">
   <mat-sidenav id="sidenav" mode="side" opened="true" style="width:20%;">
     <div class="header">
@@ -10,26 +9,38 @@
       <app-first-list ></app-first-list>
     </mat-nav-list>
     <mat-nav-list class=" list sidenav-channelList">
-      <a mat-list-item routerLink="/#" routerLinkActive="active">Channels</a>
-        <app-menu-list [showChannelList]=true></app-menu-list>
-     
+      <a class="item" mat-list-item routerLink="/#" routerLinkActive="active">
+        <span class="material-icons icon" (click)="showChannelListToggle=!showChannelListToggle">
+          keyboard_arrow_down
+          </span>
+        <span class="icon-name">Channels</span>
+        <span class="material-icons add right">add</span>
+      </a>
+        <app-menu-list [showChannelListToggle]="showChannelListToggle" [showChannelList]="true"></app-menu-list>
     </mat-nav-list>
     <mat-nav-list class="list sidenav-DMList">
-      <a mat-list-item routerLink="/#" routerLinkActive="active">Direct messages</a>
-      <app-menu-list [showUserList]=true></app-menu-list>
+      <a  class="item" mat-list-item routerLink="/#" routerLinkActive="active">
+      <span class="material-icons icon" (click)="showUserListToggle=!showUserListToggle">
+        keyboard_arrow_down
+        </span>
+        <span class="icon-name">Direct messages</span>
+        <span class="material-icons add">add</span>
+      </a>
+      <app-menu-list [showUserListToggle]="showUserListToggle" [showUserList]="true"></app-menu-list>
     </mat-nav-list>
-    <mat-nav-list >
-      <a mat-list-item routerLink="/#" routerLinkActive="active">Apps</a>
-    
+    <mat-nav-list class="list sidenav-AppList" >
+      <a class="item" mat-list-item routerLink="/#" routerLinkActive="active">
+        <span class="material-icons icon" (click)="showAppListToggle=!showAppListToggle">
+         keyboard_arrow_down
+          </span>
+          <span class="icon-name">Apps</span>
+          <span class="material-icons add">add</span>
+      </a>
+      <app-menu-list [showAppListToggle]="showAppListToggle" [showAppList]="true"></app-menu-list>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content id="main-content" style="color: black; overflow: hidden;">
+  <mat-sidenav-content id="main-content">
     <!-- <router-outlet></router-outlet> -->
-    <div style="height:100vh">
-      <!-- <app-message-container></app-message-container> -->
-      <router-outlet></router-outlet>
-    </div>
-    
+    <p style="height:100vh">Main content </p>
   </mat-sidenav-content>
 </mat-sidenav-container>
-

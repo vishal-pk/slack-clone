@@ -8,9 +8,10 @@ export const firstlist = [
         iconName: "group",
     },
     {
-        name : "Mentions & Reactions",
+        name : "Mentions & reactions",
         iconName: "alternate_email",
     },
+   
     {
         name : "Saved Items",
         iconName: "bookmark_border",

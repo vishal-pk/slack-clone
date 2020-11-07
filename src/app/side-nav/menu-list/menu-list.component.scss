@@ -1,17 +1,16 @@
 .channel-item-name{
-  margin-left:10px;
+  margin-left:8px;
 }
-
 .user-item-name{
   margin-left: 10px;
 }
 .item{
   height:31px;
-  padding-left:0;
+  padding-left:10px;
   color:#bcabbc;
   font-size: 15px;
+  line-height: 28px;
 }
-
 .routeIcon {
   border-radius: 20%;
   padding:2px;
@@ -32,51 +31,60 @@
 }
 .person-icon {
   border-radius: 20%;
-  color: white;
-  background-color: blue;
 }
-.person-icon:nth-child(2n+3) {
-  border-radius: 20%;
-  color: white;
-  background-color: green;
-}
-
+// .person-icon:nth-child(2n+3) {
+//   border-radius: 20%;
+//   color: white;
+//   background-color: green;
+// }
 .onlinestatus {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  border: 2px solid #3f0e40;
-  background-color: #2bac76;
+  border: 2px solid #3F0E40;
+  background-color: #2BAC76;
   position: absolute;
   top: 65%;
   left: 65%;
 }
+.offlinestatus {
+  width: 5px;
+  height: 5.2px;
+  border-radius: 50%;
+  border: 2px solid #BCABBC;
+  background-color: #3F0E40;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+} 
 .green{
-  color: #f2f8f7;
-  background-color: #027b5c;
+  color: #F2F8F7;
+  background-color: #027B5C;
 }
 .blue{
-  color: #0b4c8c;
-  background-color: #f0f4f8;
+  color: #0B4C8C;
+  background-color: #F0F4F8;
 }
 .yellow{
   color:#fdf9ec;
-  background-color: #f2c744;
+  background-color: #F2C744;
 }
 .lightblue{
-  color: #d5e9f2;
-  background-color: #1d9bd1 ;
+  color: #D5E9F2;
+  background-color: #1D9BD1 ;
 }
 .pink{
   color:#e01e5a;
-  background-color: #fdf4f7;
+  background-color: #FDF4F7;
 }
 .violet{
-  color: #8a2e99;
+  color: #8A2E99;
   background-color:#f9f5fa ;
 }
 .orange{
   color:#fcedea;
-  background-color: #de4e2b;
+  background-color: #DE4E2B;
 }
-
+.item:hover{
+  background-color: #350D36;
+}
