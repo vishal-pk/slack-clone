@@ -1,5 +1,26 @@
 
 <mat-sidenav-container class="container">
+    <mat-sidenav id="sidenav" mode="side" opened="true" style="width:20%;">
+      <mat-nav-list class=" list sidenav-list">
+        <a mat-list-item routerLink="/#" routerLinkActive="active">Channels</a>
+        <a mat-list-item routerLink="/#" routerLinkActive="active">Direct messages</a>
+      </mat-nav-list>
+      <mat-nav-list class=" list sidenav-channelList">
+        <a mat-list-item routerLink="/#" routerLinkActive="active">Channels</a>
+        <a mat-list-item routerLink="/#" routerLinkActive="active">Direct messages</a>
+      </mat-nav-list>
+      <mat-nav-list class="list sidenav-DMList">
+        <a mat-list-item routerLink="/#" routerLinkActive="active">Channels</a>
+        <a mat-list-item routerLink="/#" routerLinkActive="active">Direct messages</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content id="main-content">
+      <!-- <router-outlet></router-outlet> -->
+      <p style="height:100vh">Main content </p>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+<mat-sidenav-container class="container">
   <mat-sidenav id="sidenav" mode="side" opened="true" style="width:20%;">
     <div class="header">
       <h3>Coda Academy Batch 2021 <span class="material-icons">

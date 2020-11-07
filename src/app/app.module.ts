@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from   '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 import { MessageComponent } from './message/message.component';
 import { PickerModule } from '@ctrl/ngx-emoji-mart';
 
@@ -24,19 +28,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MessagePassingService } from './service/message-passing.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+    SideNavComponent,
     MessageComponent,
     NavbarComponent,
     ChatHeaderComponent,
-    SideNavComponent,
     FirstListComponent,
     MenuListComponent,
     NavbarComponent,
     SideNavComponent,
     MessageContainerComponent,
     MessageBoxComponent
+
   ],
   imports: [
     BrowserModule,
@@ -53,6 +59,7 @@ import { MessagePassingService } from './service/message-passing.service';
   ],
   providers: [
     MessagePassingService
+
   ],
   bootstrap: [AppComponent]
 })
