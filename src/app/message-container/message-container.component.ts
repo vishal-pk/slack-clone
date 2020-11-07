@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MessagePassingService } from '../service/message-passing.service';
+import { Message, MessagePassingService } from '../service/message-passing.service';
 
 @Component({
   selector: 'app-message-container',
@@ -9,10 +9,16 @@ import { MessagePassingService } from '../service/message-passing.service';
 export class MessageContainerComponent implements OnInit {
 messages=[]
 receiver='Manoj';
+sender='vishal';
   constructor(private messagePassingService : MessagePassingService) { }
 
   ngOnInit(): void {
     this.messages=this.messagePassingService.getMessages();
+  }
+  sendMessageToParent(message){
+    this.messages.push(new Message(this.sender,this.receiver,[message]));
+    
+
   }
 
 }
