@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+ 
 @Component({
   selector: 'app-message',
   templateUrl: './message.component.html',
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
-faCoffee = faCoffee;
-  constructor() { }
+   constructor() { }
 
   ngOnInit(): void {
   }
