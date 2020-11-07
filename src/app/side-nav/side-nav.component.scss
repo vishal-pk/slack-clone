@@ -1,19 +1,7 @@
-// .main-content{
-//     height:88vh;
-// }
 #sidenav{
     background-color: #3F0E40;
     font-size:16px;
 }
-// .sidenav-list{
- 
-// }
-// .sidenav-channelList{
-   
-// }
-// .sidenav-DMList{
-  
-// }
 .list{
     color:#bcabbc;
     margin-left: .2%;
@@ -25,12 +13,11 @@
     padding-left: 0px;
   vertical-align:middle;
 }
-
 .header{
     display: flex;
     align-items: center;
     width: 100%;
-    border: 1px solid #bcabbc;
+    border: 1px solid #BCABBC;
     margin-left:-1px;
 }
 .add{
@@ -38,31 +25,31 @@
     margin-left:20%;
     margin-left: auto;
 }
-
 .icon-name:hover + .add{
     visibility: visible; 
 } 
-
 .icon-name{
     font-size: 15px;
     line-height: 28px;
 }
-
 .sidenav-channelList{
     display: flex;
     flex-direction: column;
 }
 .mat-list-item-content{
-    
     padding: 0%;
 }
-// .list1 .right{
-//     margin-left: 80px;;
-//   }
-//   .list2 .right{
-//     margin-left: 30px;;
-//   }
-//   .list3 .right{
-//     margin-left: 110px;;
-//   }
-  
+.item:hover{
+    background-color: #350D36;
+  }
+
+
+
+
+
+
+
+
+
+
+
