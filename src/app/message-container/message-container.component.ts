@@ -16,6 +16,8 @@ sender='vishal';
     this.messages=this.messagePassingService.getMessages();
   }
   sendMessageToParent(message){
+    if(message==='')
+    return;
     this.messages.push(new Message(this.sender,this.receiver,[message]));
     
 
