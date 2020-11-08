@@ -12,7 +12,9 @@ messages=[]
 receiver='receiver';
 sender='Haritha Jayasankar';
   constructor(private messagePassingService : MessagePassingService,private route : ActivatedRoute) { 
+    this.receiver='Manoj';
     this.route.params.subscribe((params: Params) => {
+      if(params['name'])
       this.receiver=params['name'];
       this.messages=this.messagePassingService.getMessages(this.receiver);
   });

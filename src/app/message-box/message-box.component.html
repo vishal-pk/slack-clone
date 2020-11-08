@@ -1,9 +1,10 @@
-
+<!-- wrapper -->
 <div class="rect">
-   <div>
-       <i class="fas fa-user fa-3x user-icon"></i>
+    <div>
+        <i class="fas fa-user fa-3x user-icon"></i>
     </div>
     <div class="text">
+        <!-- floating menu -->
         <div class="float-menu drop-shadow">
             <i class="fa fa-smile-o fa-lg floating-icon tooltip" aria-hidden="true"><span class="tooltiptext">Add Reaction</span></i>
             <i class="fa fa-comment-o fa-lg floating-icon tooltip" aria-hidden="true"><span class="tooltiptext">Reply in thread</span></i>
@@ -12,9 +13,10 @@
             <i class="fa fa-ellipsis-v fa-lg floating-icon tooltip" aria-hidden="true"><span class="tooltiptext m110">More Actions</span></i>
 
         </div>
-        <span class="receiver" style="text-transform: capitalize;">{{message.sender}}</span>  <span>{{message.date | date : 'H:mm'}}</span>
+        <!-- messages div -->
+        <span class="receiver">{{message.sender}}</span> <span>{{message.date | date : 'H:mm'}}</span>
         <p *ngFor='let msg of message.messages'>{{msg}}</p>
-      
+
     </div>
-   
+
 </div>

@@ -5,6 +5,9 @@ import { MessageContainerComponent } from './message-container/message-container
 const routes: Routes = [
   {
       path:'user/:name',component:MessageContainerComponent
+  },
+  {
+    path:'',component:MessageContainerComponent
   }
 ];
 

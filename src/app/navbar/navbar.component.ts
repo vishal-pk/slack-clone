@@ -8,18 +8,17 @@ import {AppService} from 'src/app/app.service';
 export class NavbarComponent implements OnInit {
   showProfile:boolean;
   constructor(private appservice :AppService) {
-    this.appservice.sub.subscribe(x=>{
+    this.appservice.sub1.subscribe(x=>{
       console.log("from navbar", x);
     })
    }
 
   ngOnInit(): void {
   }
+  
   emit(showProfile : boolean){
     this.showProfile = !showProfile;
     console.log("in sidenav-componet.ts.."+this.showProfile);
     this.appservice.toggleProfileCard(this.showProfile);
   }
-  
-
 }

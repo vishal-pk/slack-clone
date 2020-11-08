@@ -6,10 +6,11 @@ import {AppService} from 'src/app/app.service';
   styleUrls: ['./profile-card.component.scss']
 })
 export class ProfileCardComponent implements OnInit {
-
+  showProfile:boolean;
   constructor(private appservice : AppService) { 
-    this.appservice.sub.subscribe(x=>{
-      console.log("from profile card",x);
+    this.appservice.sub1.subscribe(x=>{
+      this.showProfile = x;
+      console.log("from profile card",this.showProfile);
     })
   }
 

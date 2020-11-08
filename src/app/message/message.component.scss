@@ -1,4 +1,5 @@
 @import '~@ctrl/ngx-emoji-mart/picker';
+//text box styling
 .text {
     width: 99%;
     height: 3rem;
@@ -6,12 +7,11 @@
     border-radius: 8px;
 }
 
-button {
-    width: 30px;
-    height: 20px;
-    padding: 12px;
-}
-
+// button {
+//     width: 30px;
+//     height: 20px;
+//     padding: 12px;
+// }
 i {
     padding: 12px;
     //  padding-left: 5px;
@@ -48,6 +48,7 @@ i {
     color: rgb(240, 220, 44);
 }
 
+//message box styling
 .box {
     border-style: solid;
     border-width: 1px;
@@ -59,17 +60,19 @@ i {
     overflow: hidden;
 }
 
+//text formatting
 .fa-font,
 .fa-paper-plane,
 .fa-at,
 .fa-paperclip,
-.fa-smile  {
+.fa-smile {
     border-radius: 8px;
     float: right;
     margin-right: 3px;
     margin-bottom: 3px;
 }
 
+//send button
 .fa-paper-plane:hover {
     color: aliceblue;
     background-color: #007A5A;
@@ -84,6 +87,7 @@ input:focus {
     border-right: 1px solid rgb(202, 202, 202);
 }
 
+//tooltip
 .tooltip {
     position: relative;
     display: inline-block;
@@ -124,4 +128,3 @@ input:focus {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-

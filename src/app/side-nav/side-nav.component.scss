@@ -1,129 +1,139 @@
-
-.main-content{
-    background-color:white;
+// Main container Styling
+.main-content {
+    background-color: white;
     color: black;
-    overflow-x:hidden;
-    max-height:100%; 
+    overflow-x: hidden;
+    max-height: 100%;
 }
 
-.main-content::-webkit-scrollbar-track
-{
-   
+.main-content::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: white;
 }
-.main-content::-webkit-scrollbar
-{
+
+.main-content::-webkit-scrollbar {
     width: 0px;
     background-color: #BCABBC;
 }
-.main-content::-webkit-scrollbar-thumb
-{
+
+.main-content::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    box-shadow:inset 0 0 6px rgba(0,0,0,.3) ;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #BCABBC;;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #BCABBC;
+    ;
 }
 
-#sidenav{
+//SideNav Styling
+#sidenav {
     background-color: #3F0E40;
-    font-size:16px;   
-    // overflow-x: hidden !important; 
+    font-size: 16px;
 }
 
-.list{
-    color:#bcabbc;
-    // margin-left: .2%;
-    a{
-        color:#bcabbc;
+//Menu list Styling
+.list {
+    color: #bcabbc;
+    a {
+        color: #bcabbc;
     }
 }
-.material-icons{
+
+.material-icons {
     padding-left: 0px;
-  vertical-align:middle;
+    vertical-align: middle;
 }
 
-.header{
+//Side nav header styling with hover effects
+.header {
     background-color: #3F0E40;
-    // position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    color:white;
-    font-weight:bold;
-    height:65px;
+    color: white;
+    font-weight: bold;
+    height: 65px;
     display: flex;
     align-items: center;
     width: 93%;
-    border-top: .01px solid  #837e83;
+    border-top: .01px solid #837e83;
     border-bottom: .01px solid #837e83;
     overflow: hidden;
-    padding-left:5%;
-    padding-right:2%;
-    z-index:10;
+    padding-left: 5%;
+    padding-right: 2%;
+    z-index: 10;
     -ms-overflow-style: none;
 }
-.header:hover{
+
+.header:hover {
     background-color: #350d36;
-    cursor:pointer;
-    
+    cursor: pointer;
 }
+
+//Scroll bar styling
 .header::-webkit-scrollbar {
     display: none;
-  }
-.header h3{
-    width:60%;
-    margin:1% 2% 1% 1%;
-    // padding:0% 4%;
-    font-weight:bold;
+}
+
+.header h3 {
+    width: 60%;
+    margin: 1% 2% 1% 1%;
+    font-weight: bold;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-.compose-msg{
+
+//Header icon styling
+.compose-msg {
     width: 30px;
-  height: 30px;
-  color: black;
-  background-color: white;
-  border-radius: 50%;
-  text-align: center;
-  margin-left: 80%; 
+    height: 30px;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 80%;
 }
 
-.icon:hover{
+//Keyboard arrows styling with hover effects
+.icon:hover {
     background-color: #532753;
-    color:#bcabbc;
-    opacity:.7;
+    color: #bcabbc;
+    opacity: .7;
     border-radius: 20%;
 }
 
-.icon-name{
+//Menu list name
+.icon-name {
     font-size: 15px;
     line-height: 28px;
-    margin-left:1%;
+    margin-left: 1%;
 }
 
-.sidenav-channelList{
+//Channel list menu
+.sidenav-channelList {
     display: flex;
     flex-direction: column;
     max-width: 100%;
 }
-.overflow{
-    overflow:hidden;
+
+.overflow {
+    overflow: hidden;
 }
 
-.mat-list-item-content{
-    
+.mat-list-item-content {
     padding: 0%;
 }
-.item:hover{
-    background-color: #350d36;
-    .add{
-        visibility: visible;
-    }
-  }  
-.add{
+
+//add icon styling
+.add {
     visibility: hidden;
-    margin-left:20%;
+    margin-left: 20%;
     margin-left: auto;
 }
 
+//add Icon to be visible on hover
+.item:hover {
+    background-color: #350d36;
+    .add {
+        visibility: visible;
+    }
+}

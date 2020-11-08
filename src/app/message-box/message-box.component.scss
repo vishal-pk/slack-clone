@@ -1,4 +1,5 @@
-.rect{
+//wrapper
+.rect {
     padding-top: 10px;
     margin-top: 5px;
     display: flex;
@@ -6,80 +7,87 @@
     margin-right: 0;
     clear: both;
     background-color: #FFFFFF;
-    &:hover{
+    &:hover {
         background-color: #F8F8F8;
-        .float-menu{visibility: visible;}
+        .float-menu {
+            visibility: visible;
+        }
     }
 }
-.nav-user{
+
+//profile image
+.nav-user {
     width: 45px;
     height: auto;
     background-color: white;
-    padding-bottom: 5px;     
-    border-radius: 15%;  
-
+    padding-bottom: 5px;
+    border-radius: 15%;
 }
-.user-icon{
+
+.user-icon {
     background-color: cornflowerblue;
     color: white;
     padding-top: 7px;
     border-radius: 5px;
 }
-.floating-icon{
+
+//icons in floating menu
+.floating-icon {
     padding: 10px;
     opacity: 0.8;
-    &:hover{
+    &:hover {
         background-color: #F8F8F8;
-       
     }
 }
-.text{
+
+//message area
+.text {
     padding-left: 10px;
     width: 100%;
-    .receiver{
-        text-transform: capitalize;
+    .receiver {
+        text-transform: capitalize !important;
         padding-bottom: 0;
         margin-bottom: 10px;
         margin-right: 10px;
         font-weight: bold;
         font-size: larger;
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
-        
-        span{
+        span {
             font-weight: lighter;
             font-size: smaller;
             margin-left: 5px;
         }
     }
-    p{
+    p {
         font-size: medium;
     }
-    .float-menu{
+    //floating menu for icons
+    .float-menu {
         float: right;
         margin-top: -25px;
         visibility: hidden;
-        border :1px solid #999999;
+        border: 1px solid #999999;
         border-radius: 5px;
         background-color: #FFFFFF;
     }
     .drop-shadow.bottom {
-        box-shadow: 0 4px 2px -2px rgba(0,0,0,0.4);
-      }
-      
-      .drop-shadow.right {
-        box-shadow: 4px 0 2px -2px rgba(0,0,0,0.4);
-      }
-      
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+    }
+    .drop-shadow.right {
+        box-shadow: 4px 0 2px -2px rgba(0, 0, 0, 0.4);
+    }
 }
+
+//remaining is for tooltip
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px  black;
-  }
-  
-  .tooltip .tooltiptext {
+    border-bottom: 1px black;
+}
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -95,14 +103,14 @@
     left: 50%;
     margin-left: -90px;
     margin-bottom: 5px;
-  }
-  
-  .tooltip:hover .tooltiptext {
+}
+
+.tooltip:hover .tooltiptext {
     visibility: visible;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+}
 
- .m110{
-     margin-left: -110px;
- }
+.m110 {
+    margin-left: -110px;
+}
