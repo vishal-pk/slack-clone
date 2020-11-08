@@ -19,12 +19,16 @@ export class Message{
 export class MessagePassingService {
 
   constructor() { }
-  mesages=[
-    new Message('vishal','manoj',['hi dude','how are you']),
-    new Message('manoj','vishal',['fine dude','how are you']),
-    new Message('vishal','manoj',['saptya']),
-  ]
-  getMessages(){
+  mesages=[]
+  getMessages( receiver){
+    this.mesages=[
+      new Message(receiver,'Haritha Jayasankar',['Hello','Hope you are doing good!']),
+      new Message('Haritha Jayasankar',receiver,['Hello '+receiver,'I am doing good']),
+      new Message(receiver,'Haritha Jayasankar',['We are glad to have you on our team','looking forward to work with you']),
+      new Message('Haritha Jayasankar',receiver,['Thanks for having me in the team']),
+      new Message(receiver,'Haritha Jayasankar',['I have mailed the project requirements']),
+      new Message('Haritha Jayasankar',receiver,['Yes i have received the mail.. will look into it']),
+    ]
     return this.mesages;
   }
 

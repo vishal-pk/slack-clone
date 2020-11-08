@@ -12,7 +12,7 @@
             <i class="fa fa-ellipsis-v fa-lg floating-icon tooltip" aria-hidden="true"><span class="tooltiptext m110">More Actions</span></i>
 
         </div>
-        <span class="receiver">{{message.sender}}</span>  <span>{{message.date | date : 'H:mm'}}</span>
+        <span class="receiver" style="text-transform: capitalize;">{{message.sender}}</span>  <span>{{message.date | date : 'H:mm'}}</span>
         <p *ngFor='let msg of message.messages'>{{msg}}</p>
       
     </div>

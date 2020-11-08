@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, DoCheck, OnChanges, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { Message, MessagePassingService } from '../service/message-passing.service';
 
 @Component({
@@ -8,12 +9,17 @@ import { Message, MessagePassingService } from '../service/message-passing.servi
 })
 export class MessageContainerComponent implements OnInit {
 messages=[]
-receiver='Manoj';
-sender='vishal';
-  constructor(private messagePassingService : MessagePassingService) { }
+receiver='receiver';
+sender='Haritha Jayasankar';
+  constructor(private messagePassingService : MessagePassingService,private route : ActivatedRoute) { 
+    this.route.params.subscribe((params: Params) => {
+      this.receiver=params['name'];
+      this.messages=this.messagePassingService.getMessages(this.receiver);
+  });
+  }
 
   ngOnInit(): void {
-    this.messages=this.messagePassingService.getMessages();
+    
   }
   sendMessageToParent(message){
     if(message==='')

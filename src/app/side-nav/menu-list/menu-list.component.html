@@ -10,7 +10,7 @@
 </div>
 <div *ngIf="showUserList && showUserListToggle">
 <div  class="userContainer" *ngFor="let user of users; index as i">
-    <a  class="item" mat-list-item routerLink="/#" routerLinkActive="active">
+    <a  class="item" mat-list-item routerLink="/user/{{user.name}}" routerLinkActive="active">
     <span class="userIconWrapper ">
         <i [class]="user.color" class=" material-icons person-icon ">person</i>
         <span *ngIf="user.status ===1 ? true:false" class="onlinestatus"></span>

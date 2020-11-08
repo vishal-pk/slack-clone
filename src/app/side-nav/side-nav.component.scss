@@ -1,10 +1,28 @@
 
-#main-content{
+.main-content{
     background-color:white;
     color: black;
     overflow-x:hidden;
-    height:93vh;
-    
+    max-height:100%; 
+}
+
+.main-content::-webkit-scrollbar-track
+{
+   
+    border-radius: 10px;
+    background-color: white;
+}
+.main-content::-webkit-scrollbar
+{
+    width: 0px;
+    background-color: #BCABBC;
+}
+.main-content::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow:inset 0 0 6px rgba(0,0,0,.3) ;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #BCABBC;;
 }
 
 #sidenav{
