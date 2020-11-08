@@ -20,7 +20,7 @@ import { MenuListComponent } from './side-nav/menu-list/menu-list.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -30,6 +30,8 @@ import { MessagePassingService } from './service/message-passing.service';
 import { MessageContainerComponent } from './message-container/message-container.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MessageComponent } from './message/message.component';
+import { CardComponent } from './card/card.component';
+import { ProfileCardComponent } from './profile-card/profile-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,9 @@ import { MessageComponent } from './message/message.component';
     MenuListComponent,
     SideNavComponent,
     MessageContainerComponent,
-    MessageBoxComponent
+    MessageBoxComponent,
+    CardComponent,
+    ProfileCardComponent
 
 
   ],
@@ -57,7 +61,8 @@ import { MessageComponent } from './message/message.component';
     MatIconModule,
     HttpClientModule,
     ScrollingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
 
   ],
   providers: [
