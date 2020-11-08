@@ -1,6 +1,6 @@
 
 .navbar{
-    height:7%;
+    height:40px;
     background-color: #350d36;
     display: flex;
     width: 100%;
@@ -42,4 +42,28 @@
     }
     
 }
+.userIconWrapper {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-top: -5px;
+  }
+  .person-icon {
+    border-radius: 20%;
+    color: white;
+    background-color: lightseagreen;
+    font-size: 2em;
+  }
+
+  .onlinestatus {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #3f0e40;
+    background-color: #2bac76;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+  }
+
 

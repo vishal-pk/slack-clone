@@ -28,5 +28,9 @@ emit(showCard : boolean){
   console.log("in sidenav-componet.ts.."+this.showCard);
   this.appservice.toggleComponent(this.showCard);
 }
+focus(){
+  this.showCard=false;
+  console.log("in ts file..");
+}
 
 }
