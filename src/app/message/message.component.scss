@@ -1,4 +1,16 @@
 @import '~@ctrl/ngx-emoji-mart/picker';
+.box {
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+}
+
+.custom {
+    float: right;
+    //margin-bottom: 10%;
+    margin-top: 220px;
+}
+
 .text {
     width: 99%;
     height: 3rem;
