@@ -1,5 +1,5 @@
 .channel-item-name{
-  margin-left:10px;
+  margin-left:8px;
 }
 
 .user-item-name{
@@ -7,11 +7,22 @@
 }
 .item{
   height:31px;
-  padding-left:0;
+  padding-left:10px;
   color:#bcabbc;
   font-size: 15px;
+  line-height: 28px;
 }
-
+.item:hover{
+  background-color: #350d36;
+  .close-icon{
+    visibility:visible;
+  }
+}
+.close-icon{
+  margin-left: auto;
+  visibility: hidden;
+  color:#bcabbc;
+}
 .routeIcon {
   border-radius: 20%;
   padding:2px;
@@ -32,14 +43,12 @@
 }
 .person-icon {
   border-radius: 20%;
-  color: white;
-  background-color: blue;
 }
-.person-icon:nth-child(2n+3) {
-  border-radius: 20%;
-  color: white;
-  background-color: green;
-}
+// .person-icon:nth-child(2n+3) {
+//   border-radius: 20%;
+//   color: white;
+//   background-color: green;
+// }
 
 .onlinestatus {
   width: 7px;
@@ -51,6 +60,17 @@
   top: 65%;
   left: 65%;
 }
+.offlinestatus {
+  width: 5px;
+  height: 5.2px;
+  border-radius: 50%;
+  border: 2px solid #bcabbc;
+  background-color: #3f0e40;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+} 
+
 .green{
   color: #f2f8f7;
   background-color: #027b5c;
@@ -79,4 +99,3 @@
   color:#fcedea;
   background-color: #de4e2b;
 }
-

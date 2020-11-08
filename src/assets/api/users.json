@@ -1,63 +1,73 @@
- [
+[
     {
       "id" : 1,
-      "name" : "Haritha Jayasankar",
-      "online" : 1,
+      "name" : "Haritha Jayasankar    you",
+      "status" : 1,
       "color":"green"
     },
     {
       "id" : 2,
-      "name" : "Sowmica M.L",
-      "offline" : 0,
+      "name" : "Akshaya Venkatesh",
+      "status" : 0,
       "color":"lightblue"
-      
     },
     {
       "id" : 3,
-      "name" : "Vishal Pk",
-      "online" : 1,
+      "name" : "Damini",
+      "status" : 1,
       "color":"pink"
     },
     {
       "id" : 4,
       "name" : "Govind K",
-      "offline" : 0,
+      "status" : 0,
       "color":"orange"
     },
     {
       "id" : 5,
-      "name" : "Hari Vishnu Prasad",
-      "offline" : 0,
+      "name" : "Gowtham S",
+      "status" : 0,
       "color":"violet"
     },
     {
       "id" : 6,
-      "name" : "Gowtham S",
-      "online" : 1,
+      "name" : "Hari Vishnu Prasad",
+      "status" : 1,
       "color":"green"
     },
     {
       "id" : 7,
-      "name" : "Damini",
-      "offline" : 0,
+      "name" : "Mohan Raj",
+      "status" : 0,
       "color":"blue"
     },
     {
       "id" : 8,
-      "name" : "Mohan Raj",
-      "online" : 1,
+      "name" : "Naveen Mohan",
+      "status" : 1,
       "color":"yellow"
     },
     {
       "id" : 9,
-      "name" : "Akshaya Venkatesh",
-      "online" : 1,
+      "name" : "Sowmica M.L",
+      "status" : 1,
       "color":"lightblue"
     },
     {
       "id" : 10,
-      "name" : "Naveen Mohan",
-      "offline" : 0,
+      "name" : "Vishal Pk",
+      "status" : 0,
       "color":"green"
     }
   ]
+
+
+
+
+
+
+
+
+
+
+
