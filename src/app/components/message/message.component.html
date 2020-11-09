@@ -1,9 +1,9 @@
-<div *ngFor="let m of messageArray">
-    <p>{{m}}</p>
-</div>
-<emoji-mart class="emoji-mart custom" set="{{set}}" *ngIf="showEmojiPicker" (emojiSelect)="addEmoji($event)" title="Pick your emoji…"></emoji-mart>
+<!-- emoji component -->
+<emoji-mart class="emoji-mart" set="{{set}}" *ngIf="showEmojiPicker" (emojiSelect)="addEmoji($event)"></emoji-mart>
+
+<!-- text area to type -->
 <div class="box">
-    <input (keydown.enter)="textdisplay()" [(ngModel)]="message" type=" text " (blur)="onBlur()" (focus)="onFocus()" class="text " placeholder="Enter a message"><br>
+    <input (keydown.enter)="textdisplay()" (blur)="onBlur()" (focus)="onFocus()" [(ngModel)]="message" type=" text " class="text " placeholder="Enter a message"><br>
     <div class="formatting">
         <i class="fas fa-bolt tooltip"><span class="tooltiptext">Shortcuts</span></i>
         <i class="fas fa-bold tooltip"><span class="tooltiptext">Bold</span></i>
@@ -15,13 +15,10 @@
         <i class="fas fa-list tooltip"><span class="tooltiptext">List</span></i>
         <i class="fas fa-grip-lines tooltip"><span class="tooltiptext">Block Quote</span></i>
         <i class="fas fa-code tooltip"><span class="tooltiptext">Code Block</span></i>
-        <i (click)="toggleEmojiPicker()" class="far fa-smile tooltip"><span class="tooltiptext">Smileys</span></i>
-        <!-- <emoji-mart class="emoji-mart" set="{{set}}" *ngIf="showEmojiPicker" (emojiSelect)="addEmoji($event)" title="Pick your emoji…"></emoji-mart> -->
         <i (click)="textdisplay()" class="far fa-paper-plane tooltip"><span class="tooltiptext">Send</span></i>
+        <i (click)="toggleEmojiPicker()" class="far fa-smile tooltip"><span class="tooltiptext">Smileys</span></i>
         <i class="fas fa-font tooltip"><span class="tooltiptext">Font</span></i>
         <i class="fas fa-at tooltip"><span class="tooltiptext">Mention</span></i>
-
         <i class=" fas fa-paperclip tooltip "><span class="tooltiptext ">Attach</span></i>
-
     </div>
 </div>

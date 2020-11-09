@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { Component,EventEmitter,OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-message',
@@ -7,8 +6,17 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./message.component.scss']
 })
 export class MessageComponent implements OnInit {
-faCoffee = faCoffee;
+  
+  @Output() sendMessage: EventEmitter<String> = new EventEmitter<String>();
   constructor() { }
+
+  ngOnInit(): void {
+  }
+    message="";
+  textdisplay(){
+      this.sendMessage.emit(this.message);
+      this.message="";
+  }
   showEmojiPicker = false;
   sets = [
     'native',
@@ -24,15 +32,7 @@ faCoffee = faCoffee;
     console.log(this.showEmojiPicker);
         this.showEmojiPicker = !this.showEmojiPicker;
   }
-  ngOnInit(): void {
-  }
-     message="";
-    messageArray =[];
 
-  textdisplay(){
-      this.messageArray.push(this.message);
-      this.message="";
-  }
   addEmoji(event) {
     console.log(this.message)
     const { message } = this;
@@ -51,5 +51,6 @@ faCoffee = faCoffee;
   onBlur() {
     console.log('onblur')
   }
+ 
   }
 
