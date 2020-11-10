@@ -101,13 +101,13 @@ input:focus {
 }
 
 //tooltip
-.tooltip {
+.tooltipm {
     position: relative;
     display: inline-block;
     border-bottom: 1px black;
 }
 
-.tooltip .tooltiptext {
+.tooltipm .tooltiptextm {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     visibility: hidden;
     width: 120px;
@@ -127,7 +127,7 @@ input:focus {
     font-weight: normal;
 }
 
-.tooltip .tooltiptext::after {
+.tooltipm .tooltiptextm::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -138,6 +138,6 @@ input:focus {
     border-color: black transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltipm:hover .tooltiptextm {
     visibility: visible;
 }
