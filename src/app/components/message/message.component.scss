@@ -8,6 +8,31 @@
     padding-left: 20px;
 }
 
+.custom {
+    position: absolute;
+    z-index: 1;
+    bottom: 13%;
+    right: 2%;
+}
+
+.emoji-mart::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.emoji-mart::-webkit-scrollbar {
+    width: 7px;
+    background-color: #f5f1f5;
+}
+
+.emoji-mart::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 6px rgba(233, 218, 218, 0.3);
+    background-color: #e9e3e9;
+    ;
+}
+
 // button {
 //     width: 30px;
 //     height: 20px;
