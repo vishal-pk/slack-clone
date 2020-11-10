@@ -11,4 +11,4 @@ export const messages =[
 ]
 
 
-export const current_user='Hari Vishnu Prasad';
+export const current_user='Hari';
