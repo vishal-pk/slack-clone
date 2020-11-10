@@ -1,6 +1,6 @@
 
 import { Component, Input, OnInit } from '@angular/core';
-import { Message } from '../service/message-passing.service';
+import { Message } from '../../service/message-passing.service';
 
 @Component({
   selector: 'app-message-box',

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ListServiceService } from 'src/app/list-service.service';
+import { ListServiceService } from 'src/app/service/list-service.service';
+import {current_user} from  "../../../constants/messageConstants";
 @Component({
   selector: 'app-menu-list',
   templateUrl: './menu-list.component.html',
@@ -9,6 +10,7 @@ export class MenuListComponent implements OnInit {
   constructor(private listservice : ListServiceService) { }
   channels;
   users;
+  currentUser =current_user;
   @Input() showChannelList: boolean;
   @Input() showUserList: boolean;
   @Input() showAppList : boolean;

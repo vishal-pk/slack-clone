@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, DoCheck, OnChanges, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { Message, MessagePassingService } from '../service/message-passing.service';
+import { Message, MessagePassingService } from '../../service/message-passing.service';
+import {current_user} from "../../constants/messageConstants"
 
 @Component({
   selector: 'app-message-container',
@@ -9,8 +10,8 @@ import { Message, MessagePassingService } from '../service/message-passing.servi
 })
 export class MessageContainerComponent implements OnInit {
 messages=[]
-receiver='receiver';
-sender='Haritha Jayasankar';
+receiver='';
+sender=current_user;
   constructor(private messagePassingService : MessagePassingService,private route : ActivatedRoute) { 
     this.receiver='Manoj';
     this.route.params.subscribe((params: Params) => {

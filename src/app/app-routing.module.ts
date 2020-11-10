@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MessageContainerComponent } from './message-container/message-container.component';
+import { MessageContainerComponent } from './components/message-container/message-container.component';
 
 const routes: Routes = [
   {

@@ -74,7 +74,7 @@
 }
 
 .header h3 {
-    width: 60%;
+    width: 69%;
     margin: 1% 2% 1% 1%;
     font-weight: bold;
     text-overflow: ellipsis;
@@ -83,14 +83,30 @@
 }
 
 //Header icon styling
-.compose-msg {
-    width: 30px;
-    height: 30px;
-    color: black;
+// .compose-msg {
+//     width: 30px;
+//     height: 30px;
+//     color: black;
+//     background-color: white;
+//     border-radius: 50%;
+//     text-align: center;
+//     margin-left: 80%;
+// }
+.mat-icon-button {
+    border: 1px solid #3f0e40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35px;
+    height: 35px;
     background-color: white;
     border-radius: 50%;
-    text-align: center;
-    margin-left: 80%;
+}
+
+.compose-msg {
+    /* align-content:center; */
+    color: black;
+    background-color: white;
 }
 
 //Keyboard arrows styling with hover effects

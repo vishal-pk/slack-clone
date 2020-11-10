@@ -9,6 +9,9 @@
     top: 13%;
     max-height: 86%;
     overflow-y: scroll;
+    -webkit-box-shadow: 2px 1px 9px 1px rgba(155, 155, 155, 0.42);
+    box-shadow: 2px 1px 9px 1px rgba(155, 155, 155, 0.42);
+    border: 1px solid rgba(155, 155, 155, 0.42);
 }
 
 //Scrollbar to the card

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
+import {messages ,current_user} from '../constants/messageConstants'
 
 @Injectable({
   providedIn: 'root'
@@ -22,12 +23,12 @@ export class MessagePassingService {
   mesages=[]
   getMessages( receiver){
     this.mesages=[
-      new Message(receiver,'Haritha Jayasankar',['Hello','Hope you are doing good!']),
-      new Message('Haritha Jayasankar',receiver,['Hello '+receiver,'I am doing good']),
-      new Message(receiver,'Haritha Jayasankar',['We are glad to have you on our team','looking forward to work with you']),
-      new Message('Haritha Jayasankar',receiver,['Thanks for having me in the team']),
-      new Message(receiver,'Haritha Jayasankar',['I have mailed the project requirements']),
-      new Message('Haritha Jayasankar',receiver,['Yes i have received the mail.. will look into it']),
+      new Message(receiver,current_user,[messages[0],messages[1]]),
+      new Message(current_user,receiver,[messages[2]+" "+receiver,messages[3]]),
+      new Message(receiver,current_user,[messages[4],messages[5]]),
+      new Message(current_user,receiver,[messages[6]]),
+      new Message(receiver,current_user,[messages[7]]),
+      new Message(current_user,receiver,[messages[8]]),
     ]
     return this.mesages;
   }
