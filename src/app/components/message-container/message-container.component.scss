@@ -15,13 +15,21 @@
 }
 
 .msg {
-    height: 20%;
     width: 80%;
+    position: fixed;
+    bottom: 15px;
 }
 
 .pl {
     padding-left: 25px;
-    height: 70%;
+    /* Firefox */
+    height: -moz-calc(90% - 95px);
+    /* WebKit */
+    height: -webkit-calc(90% - 95px);
+    /* Opera */
+    height: -o-calc(90% - 95px);
+    /* Standard */
+    height: calc(90% - 95px)
 }
 
 //scrollbar styling
