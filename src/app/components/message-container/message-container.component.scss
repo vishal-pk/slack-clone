@@ -23,13 +23,13 @@
 .pl {
     padding-left: 25px;
     /* Firefox */
-    height: -moz-calc(90% - 95px);
+    height: -moz-calc(100% - 160px);
     /* WebKit */
-    height: -webkit-calc(90% - 95px);
+    height: -webkit-calc(100% - 160px);
     /* Opera */
-    height: -o-calc(90% - 95px);
+    height: -o-calc(100% - 160px);
     /* Standard */
-    height: calc(90% - 95px)
+    height: calc(100% - 160px)
 }
 
 //scrollbar styling
