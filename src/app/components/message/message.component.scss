@@ -1,7 +1,14 @@
 @import '~@ctrl/ngx-emoji-mart/picker';
 //text box styling
 .text {
-    width: 99%;
+    /* Firefox */
+    width: -moz-calc(100% - 22px);
+    /* WebKit */
+    width: -webkit-calc(100% - 22px);
+    /* Opera */
+    width: -o-calc(100% - 22px);
+    /* Standard */
+    width: calc(100% - 22px);
     height: 45px;
     border: none;
     border-radius: 8px;
@@ -59,7 +66,8 @@ i {
     text-overflow: ellipsis;
     white-space: nowrap;
     border-radius: 8px;
-    height: 40px;
+    height: 38px;
+    
 }
 
 .fa-bolt:hover {
@@ -79,7 +87,6 @@ i {
     margin-left: 25px;
     margin-right: 30px;
     background-color: white;
-    overflow: hidden;
     height: 85px;
     position: relative;
     bottom: 0;
